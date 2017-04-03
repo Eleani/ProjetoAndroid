@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_viagem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nany_.projetoviagem.ViagemActivity">
+
+
+    <TextView
+        android:text="@string/destino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/destinoTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/destinoTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/destinoEditText"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/tipoViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destinoEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/tpViagemTextView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tpViagemTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lazer"
+            android:id="@+id/lazerRadioButton"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/negocio"
+            android:id="@+id/negocioRadioButton"
+            android:layout_alignParentStart="true"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/dataChegada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/dtChegadaTextView" />
+
+    <TextView
+        android:text="@string/dataRetorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dtChegadaTextView"
+        android:layout_toEndOf="@+id/radioGroup"
+        android:layout_marginStart="86dp"
+        android:id="@+id/dtRetornoTextView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/dtChegadaTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/dtChegadaEditText"
+        android:layout_toStartOf="@+id/dtRetornoEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_alignBottom="@+id/dtChegadaEditText"
+        android:id="@+id/dtRetornoEditText"
+        android:layout_alignStart="@+id/dtRetornoTextView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dtChegadaEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/orcamentoTextView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/valorOrcamentoEditText"
+        android:layout_below="@+id/orcamentoTextView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/qtdePessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/qtdePessoaTextView4"
+        android:layout_below="@+id/valorOrcamentoEditText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/qtdePessoaEditText"
+        android:layout_below="@+id/valorOrcamentoEditText"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/gasto"
+        android:onClick="gravarViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gastoButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/btFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gastoButton"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/gastoButton"
+        android:onClick="gravarFoto"
+        android:text="@string/btFoto" />
+
+</RelativeLayout>

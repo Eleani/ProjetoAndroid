@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ProjetoViagem</string>
+    <string name="destino">Destino</string>
+    <string name="tipoViagem">Tipo Viagem</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocio">Negócio</string>
+    <string name="criarViagem">Criar Viagem</string>
+    <string name="listarViagem">Listar Viagem</string>
+    <string name="galeria">Galeria</string>
+    <string name="dataChegada">Data Chegada</string>
+    <string name="dataRetorno">Data Retorno</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="qtdePessoa">Quantidade Pessoa</string>
+    <string name="gasto">Gasto</string>
+    <string name="tipo">Tipo</string>
+    <string name="valor">Valor</string>
+    <string name="data">Data</string>
+    <string name="descricao">Descrição</string>
+    <string name="local">Local</string>
+    <string name="gerarGasto">Gerar Gasto</string>
+    <string name="title_activity_lista_viagem">ListaViagemActivity</string>
+    <string name="btFoto">Foto</string>
+    <string name="btListarGasto">Listar Gasto</string>
+    <string name="btLoginPorVoz">Clique e diga Login</string>
+    <string name="btSalvarFoto">Salvar Foto</string>
+    <string name="btCapturarFoto">Capturar Foto</string>
+    <string name="btVisualizarFoto">Visualizar Foto</string>
+
+
+</resources>
